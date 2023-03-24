@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Home</title>
+	<link rel="stylesheet" href="assets/bootstrap-5.0.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="assets/bootstrap-5.0.2/js/bootstrap.bundle.js"></script>
+	<style>
+		
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		@media screen and (max-width:993px) {
+			.header-logo{
+				width: 150px;
+			
+			}
+			
+		}
+		@media screen and (min-width:1198px){
+			.btn.offcanvas.changed{
+				display: none;
+			}
+		}
+
+	
+		@media screen and (min-width: 1199.98px) { 
+			.secsion2-img{
+				max-width: 100%;
+				height:auto;
+			}
+		 }
+
+		 .carousel-btn{
+			max-width: 320px;
+		 }
+
+		 .hr{
+			border: 1px dotted gray;
+			background-color: white;
+		 }
+		 
+		 a:hover{
+			color: black;
+			text-decoration: underline;
+			
+		 }
+
+		 nav a:hover{
+			font-weight: 600;
+			text-decoration: none;
+			border-bottom: 5px solid blue;
+		 }
+	</style>
+
+</head>
+<body>
+<div  style="position: relative;" class="container-fluid p-0 m-0">
+	<div class="fixed-top bg-white   "> 
+		<div class="container-fluid ">
+			<div class="row row-cols-3 pt-2 pb-2  justify-content-center">
+				<div class="col d-flex d-lg-none  start m-0 p-0">
+					<button style="min-width: 100px;"  class=" rounded-pill btn btn-offcanvas-changed btn border-primary"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas ">
+						Menu
+					</button>
+				</div>
+				<div class="col d-flex  d-lg-none  align-items-center" style="width: 45px; height: 45px; background-size: cover; background-image:url(assets/images/pp_fc_hl.svg) ;" >
+				</div>
+				<div class="col p-0 m-0  d-flex justify-content-end d-lg-none">
+					<a  href="./login.html" type="button" class=" btn border-primary rounded-pill" style="text-decoration: none; min-width: 100px;">Log in</a>
+				</div>		
+			</div>
+		</div>
+		<div style="position: absolute;top: 0 ;left: 0;"  class="container-fluid  d-none d-lg-block m-0 text-end float-start pt-2 bg-white">
+			<div class="row  pt-4">
+				<div class="col ">
+					<a href="./index.html"><img  class="pb-4 img-fluid p-2" src="assets/images/pp_fc_hl.svg" alt="logo">	
+					</div></a>
+				<div class="col-6 d-flex justify-content-center align-items-md-end">
+					<nav class="nav ">
+						<a class="pb-5 pt-3 nav-link nav-list-link dropdown-toggle text-dark fs-6 " href="#" role="button" data-bs-toggle="dropdown" style="font-size: 18px;"> PERSONAL</a>
+						<div class="dropdown-menu  rounded-0 vw-100 bg-primary">
+							<div class="row container-dropdown">
+								<div class="col-lg-3" >
+									<ul class="list-unstyled">
+										<li class="m-5"><a class="text-white" href="./enterprise.html"><h5>Pay with Paypal</h5>Use Paypal to shop & send payments</a></li>
+										<li class="m-5"><a class="text-white" href="./interprise_flatform.html"><h5>Shop online Securely</h5>Fast & safe online shopping</a></li>
+									</ul>
+								</div>
+								<div class="col">
+									<ul class="list-unstyled">
+										<li class="m-5"><a class="text-white" href="#"><h5>Send Payments</h5>Send money for work done</a></li>
+										<li class="m-5"><a class="text-white" href="#"><h5>Buyer Protection</h5>Protect your purchases</a></li>
+									</ul>
+								</div>
+								<div class="col-1">
+									<button class="btn btn-close btn-white"> </button>
+								</div>
+							</div>
+						</div>
+						<a class="pb-3 pt-3 nav-link nav-list-link dropdown-toggle text-dark fs-6  " href="#" role="button" data-bs-toggle="dropdown" style="font-size: 18px;"> BUSINESS</a>
+						<div class="dropdown-menu  rounded-0 vw-100 bg-primary text-white">
+							<div class="row container-dropdown justify-contain-start">
+								<div class="col-lg-4">
+									<h5><narrow>SMALL-TO-MEDIUM BUSINESS</narrow></h5>
+									<div class="row">
+										<div></div>
+										<div></div>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<h5><narrow>ENTERPRISE</narrow></h5>
+									<div class="row">
+										<div></div>
+										<div></div>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<h5><narrow>MORE</narrow></h5>
+									<div class="row">
+										<div></div>
+										<div></div>
+									</div>
+								</div>
+								<div class="col">
+									<button class="btn btn-close btn-white"></button>
+								</div>
+							</div>
+						</div>
+							<a class="pb-3 pt-3 nav-link nav-list-link dropdown-toggle text-dark fs-6 " href="#" role="button" data-bs-toggle="dropdown" style="font-size: 18px;"> PARTNERS</a>
+							<a class="pb-3 pt-3 nav-link nav-list-link dropdown-toggle text-dark fs-6 " href="#" role="button" data-bs-toggle="dropdown" style="font-size: 18px;"> HELP & FAQ</a>
+							<div class="dropdown-menu  rounded-0 vw-100 bg-primary">
+								<div class="row container-dropdown justify-contain-start">
+									<div class="col-lg-4">
+										<h4>SMALL-TO-MEDIUM BUSINESS</h4>
+										<div class="row">
+											<div></div>
+											<div></div>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<h4>ENTERPRISE</h4>
+										<div class="row">
+											<div></div>
+											<div></div>
+										</div>
+									</div>
+									<div class="col-lg-3">
+										<h4>MORE</h4>
+										<div class="row">
+											<div></div>
+											<div></div>
+										</div>
+									</div>
+									<div class="col">
+										<button class="btn btn-close btn-white"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</nav>
+					<div class="col d-flex p-3 text-start d-none d-lg-block ">
+						<a  href="./login.html" type="button" class="me-2 btn border-primary rounded-pill p-2" style="text-decoration: none;min-width: 100px; z-index: 2;">Log in</a>
+						<a href="./Sign up.html" type="button" class="btn btn-primary rounded-pill p-2 " style="min-width: 100px;">sign up</a>
+					</div>		
+				
+				</div>
+			</div>
+		</div>
+	</div>
+			
+			
+						<!-- <div class="row">
+							
+						</div> -->
+						<!-- <div class="row float-start ms-5">
+							<div class="d-flex col-lg-3 col-md-4 col-sm-4 col">
+								  <button style="max-width: 150px;"  class="col col-sm-4 col-md-4 rounded-pill btn btn-offcanvas-changed btn border-primary"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas ">
+									Menu
+								  </button>
+								<a class="col" href="javascript:void(0)">
+									<img class="pt-2 header-logo d-md-none d-sm-none d-none d-lg-none d-xl-flex w-75" src="assets/images/pp_fc_hl.svg" alt="logo">
+								</a>
+							</div>	
+							<div class="col-lg-6 col-md-4 col-sm-4 col" style="align-items: end;">
+									<nav class="nav d-none d-xl-inline-flex">
+										<a class="nav-link nav-list-link dropdown-toggle text-dark fs-6 " href="#" role="button" data-bs-toggle="dropdown" style="font-size: 18px;"> PERSONAL</a>
+										<div class="dropdown-menu  rounded-0 vw-100 bg-primary">
+											<div class="row container-dropdown">
+												<div class="col-lg-3" >
+													<ul class="list-unstyled">
+														<li class="m-5"><a class="text-white" href="#"><h5>Pay with Paypal</h5>Use Paypal to shop & send payments</a></li>
+														<li class="m-5"><a class="text-white" href="#"><h5>Shop online Securely</h5>Fast & safe online shopping</a></li>
+													</ul>
+												</div>
+												<div class="col">
+													<ul class="list-unstyled">
+														<li class="m-5"><a class="text-white" href="#"><h5>Send Payments</h5>Send money for work done</a></li>
+														<li class="m-5"><a class="text-white" href="#"><h5>Buyer Protection</h5>Protect your purchases</a></li>
+													</ul>
+												</div>
+												<div class="col-1">
+													<button class="btn btn-close btn-white"> </button>
+												</div>
+											</div>
+										</div>
+										<a class="nav-link nav-list-link dropdown-toggle text-dark fs-6  " href="#" role="button" data-bs-toggle="dropdown" style="font-size: 18px;"> BUSINESS</a>
+										<div class="dropdown-menu  rounded-0 vw-100 bg-primary text-white">
+											<div class="row container-dropdown justify-contain-start">
+												<div class="col-lg-4">
+													<h5><narrow>SMALL-TO-MEDIUM BUSINESS</narrow></h5>
+													<div class="row">
+														<div></div>
+														<div></div>
+													</div>
+												</div>
+												<div class="col-lg-4">
+													<h5><narrow>ENTERPRISE</narrow></h5>
+													<div class="row">
+														<div></div>
+														<div></div>
+													</div>
+												</div>
+												<div class="col-lg-3">
+													<h5><narrow>MORE</narrow></h5>
+													<div class="row">
+														<div></div>
+														<div></div>
+													</div>
+												</div>
+												<div class="col">
+													<button class="btn btn-close btn-white"></button>
+												</div>
+											</div>
+										</div>
+											<a class="nav-link nav-list-link dropdown-toggle text-dark fs-6 " href="#" role="button" data-bs-toggle="dropdown" style="font-size: 18px;"> PARTNERS</a>
+											<a class="nav-link nav-list-link dropdown-toggle text-dark fs-6 " href="#" role="button" data-bs-toggle="dropdown" style="font-size: 18px;"> HELP & FAQ</a>
+											<div class="dropdown-menu  rounded-0 vw-100 bg-primary">
+												<div class="row container-dropdown justify-contain-start">
+													<div class="col-lg-4">
+														<h4>SMALL-TO-MEDIUM BUSINESS</h4>
+														<div class="row">
+															<div></div>
+															<div></div>
+														</div>
+													</div>
+													<div class="col-lg-4">
+														<h4>ENTERPRISE</h4>
+														<div class="row">
+															<div></div>
+															<div></div>
+														</div>
+													</div>
+													<div class="col-lg-3">
+														<h4>MORE</h4>
+														<div class="row">
+															<div></div>
+															<div></div>
+														</div>
+													</div>
+													<div class="col">
+														<button class="btn btn-close btn-white"></button>
+													</div>
+												</div>
+											</div>
+									</nav>
+							</div >
+							<div class="d-flex justify-content-center col-lg-3 col-md-4 col-sm-4 col">
+									<button type="button" class="btn border-primary rounded-pill p-2" style="width: 100px;">Log in</button>
+									<button type="button" class="btn btn-primary d-none d-xl-inline rounded-pill p-2" style="width: 100px;">sign up</button>
+							</div> -->
+					  </div>	
+					</div> 
+				</nav>
+			
+			<div class="container-fluid p-0">
+				<div class="carousel-offcanvas body-root vw-60 dv-4 position-relative ">
+					<!-- Carousel -->
+						<div id="demo" class="carousel slide" data-bs-ride="carousel">
+			
+						<!-- Indicators/dots -->
+						<div class="carousel-indicators">
+						<button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active rounded-circle" style="width: 15px;height: 15px;"></button>
+						<button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="rounded-circle" style="width: 15px;height: 15px;"></button>
+						</div>
+						
+						<!-- The slideshow/carousel -->
+						<div class="carousel-inner d-flex flex-wrap">
+							<div class="carousel-item active">
+								<div style="min-height:530px; background-repeat: no-repeat; background-size: cover; background-image: url(assets/images/hero-sg-shop-and-pay.jpg);" class="container-fluid">
+									<!-- <img   src="/case study 2/assets/images/hero-sg-shop-and-pay.jpg" alt="Los Angeles" class=" d-block"> -->
+								</div>
+								<div class="row">
+									<div class="col-lg-6 carousel-caption mt-5 ms-5 ps-3" style="position: absolute; top: 0; left: 0; text-align: start;">
+										<h1 class="pt-5"><em>PAYPAL IS NOW AVAILABLE IN VIETNAMESE</em></h1>
+										<p style="font-size: 1.2rem;" >Experience PayPal in Vietnamese, making it even easier for you to shop around the globe with us. Prefer English? Simply log in to your account settings <img src="https://www.paypalobjects.com/ui-web/icons/1-0-0/settings.svg" alt="gear icon" class="gear-icon">  and switch your language preference to Englis.</p>
+										<span class="row w-100">
+											<a class="col-8 carousel-btn  p-3 btn mt-3 btn-primary rounded-pill">Sign Up Now</a>
+										</span>
+									</div>  
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div style="min-height:530px; background-repeat: no-repeat; background-size: cover; background-image: url(assets/images/vn-home-banner.jpg);" class="container-fluid">
+								</div>
+								<!-- <img src="/case study 2/assets/images/vn-home-banner.jpg" alt="New York" class="d-block"> -->
+								<div class="container row">
+									<div class="col-lg-12 carousel-caption mt-5 ms-5 ps-3" style="position: absolute; top: 0; left: 0; text-align: start;">
+										<h1 class="pt-5 mt-5"><em>THE NEW WAY TO SHOP AND PAY</em></h1>
+										<p class="lh-base w-50" style="font-size: 1.2rem;" >With PayPal, it’s now a lot safer, easier and faster for you to shop and pay online across all your favourite stores.</p><br>
+										<span class="w-100 carousel-btn p-3 btn mt-4 border-white border-2 bg-transparent text-white rounded-pill">>>
+											<span class=""><a class="text-white text-decoration-none" href="#">See how paypal works</a></span>
+										</span><br>
+										<a class="w-100 carousel-btn p-3 btn mt-4 btn-primary rounded-pill">Sign Up Now</a>
+									</div>  
+								</div>
+							</div>
+						</div>
+						<!-- Left and right controls/icons -->
+						<button class="carousel-control-prev align-items-lg-center align-items-xl-center align-items-md-end align-items-sm-end" type="button" data-bs-target="#demo" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon "></span>
+						</button>
+						<button class="carousel-control-next align-items-lg-center align-items-xl-center align-items-md-end align-items-sm-end" type="button" data-bs-target="#demo" data-bs-slide="next">
+						<span class="carousel-control-next-icon"></span>
+						</button>
+				</div>
+			</div>
+			
+		</div>	
+	<section class="section1 bg-white m-0 p-0">
+		<div class="container-fluid p-4 d-flex justify-content-center bg-white">
+			<h5>Have a query? <a class="text-decoration-none">Click here</a> to reach Help Centre</h5>
+		</div>
+		<div class="d-flex justify-content-center p-4 mb-4">
+			<h3>Pay with peace of mind</h3>
+		</div>
+		<div class="container-lg">
+			<div class="row row-cols-1 row-cols-md-2 row-cols-sm-1 row-cols-lg-4 ">
+				<div class="col">
+					<div class="row row-cols-md-1 ">
+						<div class="col d-none d-md-block align-items-center text-center">
+							<img class="" style="width: 75px;" src="assets/images/secsion1/no-fee75x75 (1).svg" alt="Card image">
+						</div>
+						<div class="col d-none d-md-block pt-3 text-center">
+							<div class="sm-accordion d-md-none">
+								<div class="accordion accordion-flush" id="accordionFlushExample">
+									<div class="accordion-item">
+									  <h2 class="accordion-header" id="flush-headingOne">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+											No Hiden Fees
+										</button>
+									  </h2>
+									  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+										<div class="accordion-body">It costs nothing to pay with PayPal, you'll only be charged a fee when you sell something or request a payment.</div>
+									  </div>
+									</div>
+								</div>
+							</div>
+							<div class="d-none d-md-block">
+								<h6 class=" text-muted" class="card-title ">No Hiden Fees</h6>
+								<p class="card-text">It costs nothing to pay with PayPal, you'll only be charged a fee when you sell something or request a payment.</p>
+	
+							</div>
+						</div>
+						<div class="sectione1-md col ">
+							<div class="accordion d-md-none d-block accordion-flush" id="accordionFlushExample">
+								<div class="accordion-item">
+								  <h2 class="accordion-header" id="flush-headingOne">
+									<div>
+										<h3 class="fs-3 display-4 ps-0 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+										<span class="pe-2"><img style="width: 50px;height: 40px;" src="assets/images/no-fee75x75.svg" alt=""></span>
+											No hidden fees
+										</h3>
+									</div>
+								  </h2>
+								  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+									<div class="fw-bold accordion-body">It <a href="">costs</a>  nothing to pay with PayPal, you'll only be charged a fee when you sell something or request a payment.</div>
+								  </div>
+								</div>
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="flush-heading2">
+									  <div>
+										  <h3 class="fs-3 display-4 ps-0 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+										  <span class="pe-2"><img style="width: 50px;height: 40px;" src="assets/images/shipping_refund75x75.svg" alt=""></span>
+										  Free Return Shipping
+										  </h3>
+									  </div>
+									</h2>
+									<div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2" data-bs-parent="#accordionFlushExample">
+									  <div class="fw-bold accordion-body">Changed your mind on your purchase? Ship it back and get a refund of up to US$20 on <a class="text-decoration-none">return shipping</a>..</div>
+									</div>
+								  </div>
+								  <div class="accordion-item">
+									<h2 class="accordion-header" id="flush-heading3">
+									  <div>
+										  <h3 class="fs-3 display-4 ps-0 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+										  <span class="pe-2"><img style="width: 50px;height: 40px;" src="assets/images/credit_card75x75.svg" alt=""></span>
+											  Earn Rewards
+										  </h3>
+									  </div>
+									</h2>
+									<div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample">
+									  <div class="fw-bold accordion-body">We work with local and overseas banks so you can use your preferred card/s and continue earning rewards.</div>
+									</div>
+								  </div>
+								  <div class="accordion-item">
+									<h2 class="accordion-header" id="flush-heading4">
+									  <div>
+										  <h3 class="fs-3 display-4 ps-0 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+										  <span class="pe-2"><img style="width: 50px;height: 40px;" src="assets/images/buyer_protection75x75.svg" alt=""></span>
+											  Always Protected
+										  </h3>
+									  </div>
+									</h2>
+									<div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
+									  <div class="fw-bold accordion-body">Shopping with PayPal is <a href="">safer</a>  with <a href="">Buyer Protection</a>, 24/7 anti-fraud monitoring and world class security.</div>
+									</div>
+								  </div>
+							  </div>
+						</div>
+					</div>
+				</div>
+				<div class="col d-none d-md-block">
+					<div class="card border-0 align-items-center text-center">
+						<img class="card-img-top" style="width: 75px;" src="assets/images/secsion1/shipping_refund75x75.svg" alt="Card image">
+						<div class="card-body">
+							<h6 class="text-muted" class="card-title ">Free Return Shipping</h6>
+							<p class="card-text">Changed your mind on your purchase? Ship it back and get a refund of up to US$20 on <a class="text-decoration-none">return shipping</a>.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col d-none d-md-block">
+					<div class="card border-0 align-items-center text-center">
+						<img class="card-img-top" style="width: 75px;" src="assets/images/secsion1//credit_card75x75.svg" alt="Card image">
+						<div class="card-body">
+							<h6 class="text-muted" class="card-title ">Earn Rewards</h6>
+							<p class="card-text">We work with local and overseas banks so you can use your preferred card/s and continue earning rewards.</p>
+						</div>
+					</div>
+				</div>	
+				<div class="col d-none d-md-block">
+					<div class="card border-0 align-items-center text-center">
+						<img class="card-img-top" style="width: 75px;" src="assets/images/secsion1/buyer_protection75x75.svg" alt="Card image">
+						<div class="card-body">
+							<h6 class="text-muted" class="card-title ">Always Protected</h6>
+							<p class="card-text">Shopping with PayPal is <a class="text-decoration-none">safer</a> with <a class="text-decoration-none">Buyer Protection</a>, 24/7 anti-fraud monitoring and world class security.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="d-flex text-center text-md-start align-items-center bg-info ali section2 pt-5 pb-5" style="min-height:530px ;  background-size: cover;
+	background-repeat: no-repeat; background-image: url(assets/images/editorial-buyer-protection.jpg);">
+		<!-- <div class="p-5 d-flex flex-column justify-content-center text-center text-sm-center text-md-start text-white" style="position: absolute;left: 0; top: 0;bottom: 0;right: 0;"> -->
+			<div class="container text-white">
+				<div class="row">
+					<div class="col-12 col-md-6 ">
+						<h2>Less worrying, more shopping</h2>
+						<p class="pt-3 mb-0">Shop and pay with PayPal and not only will you never have to worry about security, you'll also get to enjoy exclusive PayPal deals at your favourite stores.</p>
+						<p class="pt-3 mb-0"><a class="text-decoration-none text-white" href="">Shop more deals now</a></p>	
+					</div>
+				</div>
+			</div>
+	</section>
+	<section class="steps d-flex align-items-center bg-white pt-5 pb-5">
+		<div class="container p-0">
+			<div class="row text-center">
+				<h2>It's as easy as 1,2,3</h2>
+			</div>
+			<div style="border-style: dotted; border-color: lightgray;" class="row border-1"></div>
+			<div class="row d-flex">
+				<div class="col-md-4 col-sm-12 ">
+					<div class="text-center">
+						<img class="d-none d-md-inline-block" src="assets/images/step1.png" alt="">
+					</div>
+					<span class="p-3 me-3 border-1 border-primary" style="float: left; width: 50px;height: 50px;">
+						<strong class="w-100">1</strong>
+					</span>
+
+					<p class="d-table-cell">
+						<b>Create Your Account</b><br>
+						Signing up for your very own PayPal account is easy and free.
+					</p>
+
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<div class="text-center">
+						<img class="d-none d-md-inline-block"  src="assets/images/step2.png" alt="">
+					</div>
+					<span class="p-3 me-3  rounded-circle border-primary" style="float: left; width: 50px;height: 50px;">
+						<strong>2</strong>
+					</span>
+
+					<p class="d-table-cell">
+						<b>Link Your Cards</b><br>
+						Link your preferred credit, debit or prepaid cards to your PayPal account.
+					</p>
+
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<div class="text-center">
+						<img class="d-none d-md-inline-block" src="assets/images/step3.png" alt="">
+					</div>
+					<span class="p-3 me-3 " style="float: left; width: 50px;height: 50px;">
+						<strong>3</strong>
+					</span>
+
+					<p class="d-table-cell">
+						<b>Choose PayPal at Checkout</b><br>
+						Use PayPal and you never need to enter your card details every time you pay.					</p>
+
+				</div>
+			<div class="row justify-content-center pt-4">
+				<button class="btn carousel-btn btn-primary p-3 rounded-pill" type="button">Sign Up Now</button>
+			</div>
+		</div>
+	</section>
+	<section style="min-height: 600px;" class="section3 d-flex align-items-center bg-white pt-5 pb-5">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-6 text-center ">
+					<img class="d-none d-md-inline-block img-fluid" src="assets/images/narr_sendmoney_vn2_1x.png" alt="img-section3">
+				</div>
+				<div class="col-md-6 ">
+					<h2 style="font-size: 2.5rem; line-height: 3rem;">
+						Send money across the table or around the world
+					</h2>
+					<p>It’s now a lot easier to pay someone. All you need is an email address to send cross-border commercial payments in over 25 currencies to almost anyone, anywhere.</p>
+					<p>
+						<a class="text-decoration-none" href="#"><b>about sending payments</b> </a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="d-flex text-center text-md-start align-items-center bg-info ali section2 pt-5 pb-5" style="min-height:565px ;  background-size: cover;
+	background-repeat: no-repeat; background-image: url(assets/images/editorial-automated-payments.jpg);">
+		<!-- <div class="p-5 d-flex flex-column justify-content-center text-center text-sm-center text-md-start text-white" style="position: absolute;left: 0; top: 0;bottom: 0;right: 0;"> -->
+			<div class="container text-white">
+				<div class="row">
+					<div class="col-12 col-md-6 ">
+						<h2>Manage your recurring payments easily</h2>
+						<p class="pt-3 mb-0">Whether it’s monthly subscriptions, recurring bills or instalment plans, it’s a lot easier to keep track and manage your recurring payments with Automatic Payments.</p>
+						<p class="pt-3 mb-0"><a class="text-decoration-none text-white" href="">Learn more</a></p>	
+					</div>
+				</div>
+			</div>
+	</section>
+	<section style="min-height: 530px; background-color:#f5f7fa !important ;"  class="section5 d-flex align-items-center bg-white pt-5 pb-5">
+		<div class="container">
+			<div class="row text-center">
+				<h2 class="section-header" >Shop everywhere, anywhere</h2>
+			</div>
+			<hr class="hr" >
+			<div class="row row-cols-2 row-cols-md-4 d-flex justify-content-center">
+				<div >
+					<img class="img-fluid" src="assets/images/logo-agoda.png" alt="agoda">
+				</div>
+				<div >
+					<img class="img-fluid" src="assets/images/logo-asos.png" alt="agoda">
+				</div>
+				<div >
+					<img class="img-fluid" src="assets/images/logo-ebay.png" alt="agoda">
+				</div>
+				<div >
+					<img class="img-fluid" src="assets/images/logo-facebook.png" alt="agoda">
+				</div>
+				<div >
+					<img class="img-fluid" src="assets/images/logo-iherb.png" alt="agoda">
+				</div>
+				<div >
+					<img class="img-fluid" src="assets/images/logo-jomashop.png" alt="agoda">
+				</div>
+				<div >
+					<img class="img-fluid" src="assets/images/logo-skype.png" alt="agoda">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section5 d-flex align-items-center bg-white pt-5 pb-5">
+		<div class="container">
+			<div class="row text-center d-flex justify-content-center">
+				<h2>Looking for business solutions?</h2>
+				<p>PayPal offers solutions for you to get paid easily and more securely however you do business - on your online store or directly via email.</p>
+				<a style="max-width: 320px;" class="btn text-primary border-1 border-primary rounded-pill" href="">Explore Business Solution</a>
+			</div>
+
+		</div>
+	</section>
+	<section style="background-color:#f5f7fa !important ;"  class="section6 d-flex align-items-center bg-white pt-5 pb-5">
+		<div class="container">
+			<div class="row text-center d-flex justify-content-center">
+				<h2 class="pb-4 display-5">Start shopping the new way</h2>
+				<a style="max-width: 320px;" class="btn p-3 btn-primary rounded-pill" href="">Sign Up Now</a>
+			</div>
+
+		</div>
+	</section>
+	<footer class="footer d-flex align-items-center bg-white pt-5 pb-5">
+		<div class="container-fluid ms-4">
+			<div class="row">
+				<div>
+					<ul class="float-lg-end list-unstyled">
+						<li class="text-lg-end text-center">
+							<a class="text-decoration-none text-dark pe-1 border-secondary border-1 border-end"  href="">Vietnamese</a>
+							<a href=""><img src="assets/images/flag.vn.png" alt="flag-vn"></a>
+						</li>
+					</ul>
+					<ul class="float-lg-start text-center text-lg-start float-center list-unstyled text-decoration-none fw-bold">
+						<li class="pe-3 d-inline-block"><a href="">Help</a> </li>
+						<li class="pe-3 d-inline-block"><a clas href="">Contact</a></li>
+						<li class="pe-3 d-inline-block"><a href="">Fees</a></li>
+						<li class="pe-3 d-inline-block"><a href="">Security</a></li>
+						<li class="pe-3 d-inline-block"><a href="">Apps</a></li>
+						<li class="pe-3 d-inline-block"><a href="">Shop</a></li>
+						<li class="pe-3 d-inline-block"><a href="">Feedback</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 d-sm-none d-lg-block">
+					<hr>
+				</div>
+
+			</div>
+			<div class="row">
+				<div>
+					<ul class="text-center float-lg-start float-md-none  fw-bold text-muted list-unstyled ">
+						<li class="pe-2 d-inline-block">About</li>
+						<li class="pe-2 d-inline-block">Newsroom</li>
+						<li class="pe-2 d-inline-block">jobs</li>
+						<li class="pe-2 d-inline-block">Developers</li>
+						<li class="pe-2 d-inline-block">Partner</li>
+					</ul>
+					<ul class="text-center float-lg-end float-md-none fw-bold text-muted list-unstyled">
+						<li class="pe-2 d-inline-block">&copy; 1999-2023</li>
+						<li class="pe-2 d-inline-block">Accessibility</li>
+						<li class="pe-2 d-inline-block">Privacy</li>
+						<li class="pe-2 d-inline-block">Legal</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<p>PayPal Pte. Ltd. (“3PL”) has applied for a license under the Singapore Payment Services Act (“PS Act”) with the Monetary Authority of Singapore. During this statutory transitional period, 3PL is operating under an exemption from holding a license and is allowed to continue to provide specific payment services.
+					<br><br>
+					When you visit or interact with our sites, services, applications, tools or messaging, we or our authorised service providers may use cookies, web beacons, and other similar technologies for storing information to help provide you with a better, faster and safer experience and for advertising purposes. Learn more <a href="">here</a> .</p>
+			</div>
+		</div>
+	</footer>
+</div>
+</body>
+</html>

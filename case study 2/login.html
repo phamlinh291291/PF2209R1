@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/bootstrap-5.0.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="assets/bootstrap-5.0.2/js/bootstrap.bundle.js"></script>
+
+    <style>
+        .muted-underline{
+            text-decoration: none;
+        }
+        .muted-underline{
+            color:none;
+            
+        }
+        .muted-underline:hover{
+            text-decoration: underline;
+        }
+
+        @media (max-width: 767px)
+        {
+            .login-wraper{
+                width: 100% !important;
+                margin: 0 auto !important;
+            }
+            .login{
+                margin: 0 auto !important;
+                border: none !important;
+                padding: 0 !important;
+            }
+            .header a{
+                max-width: 100%;
+            }
+            
+        }
+
+        @media (min-width: 2460px)
+            {
+                .footer{
+                    position: fixed !important;
+                    left: 0 !important;
+                    bottom: 0 !important;
+                    right: 0 !important;
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="container-fluid m-0 p-0">
+        <div style=" width: 460px;" class="login-wraper container-md pb-4">
+            <div style="margin-top: 120px;"  class="login p-5 border rounded-3 ">
+                <div class="login">
+                    <header style="padding-bottom: 60px;" class="d-flex justify-content-center">
+                        <a href="index.html"><p style=" background-position: center; background-color: transparent; background-repeat: no-repeat; width: 34px; height: 40px; background-image:url(assets/images/login/paypal-mark-color.svg) ;"></p></a> 
+                    </header>
+                    <div class="form-floating mb-3 mt-3">
+                        <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+                        <label class="text-muted fs-5" for="email">Email or mobile number</label>
+                    </div>
+                          
+                    <div class="form-floating mt-3 mb-3">
+                        <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                        <label class="text-muted fs-5" for="pwd">Password</label>
+                    </div>
+                    <div class="text-start">
+                        <p><a class="text-decoration-none fw-bold fs-4" href="">Forgot Password?</a> </p>
+                    </div>
+                    <div class="me-0 ms-0 row">
+                        <button class="p-3 btn btn-primary rounded-pill" >Log In</button>
+                    </div>
+                    <div  class="mt-5 mb-3 text-center border-top border-1">
+                        <span style="position: relative; top: -1.2rem;" class="fs-5 p-2 bg-white" >or</span>
+                    </div>
+                    <div class="me-0 ms-0 row">
+                        <button class=" p-3 btn bg-transparent border-1 border-primary rounded-pill" >Sign Up</button>
+                    </div>
+                </div>
+                
+
+                <div class="mt-5 pt-5 text-center">
+                    <ul class="list-unstyled d-inline-block">
+                        <li class="pe-2 d-inline-block">
+                            <img src="assets/images/flag.vn.png" alt="">
+                        </li>
+                        <li class="pe-2 d-inline-block border-end">
+                            <a class="muted-underline text-muted" href="">Tiếng Việt</a>
+                        </li>
+                        <li class="pe-2 d-inline-block">
+                            <a class="muted-underline text-muted" href="">English</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <footer style="background-color: #F7F9FA; position: relative" class="footer p-3">
+            <div  class=" m-0">
+                <ul class=" d-flex list-unstyled justify-content-center mb-0">
+                    <li class="pe-2">
+                       <a class="muted-underline small fw-bold text-muted" href="">Contact Us</a> 
+                    </li>
+                    <li class="pe-2">
+                      <a class="muted-underline small fw-bold text-muted" href="">Privacy</a>  
+                    </li>
+                    <li class="pe-2">
+                        <a class="muted-underline fw-bold text-muted" href="">Legal</a> 
+                    </li>
+                    <li class="pe-2">
+                        <a class="muted-underline small fw-bold text-muted" href="">Policy Updates</a> 
+                    </li>
+                    <li class="pe-2">
+                        <a class=" muted-underline small fw-bold text-muted" href="">Worldwide</a> 
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/bootstrap-5.0.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="assets/bootstrap-5.0.2/js/bootstrap.bundle.js"></script>
+
+</head>
+<style>
+    .section8 a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+
+    }
+    .section8 a:hover{
+        text-decoration: underline;
+    }
+    .section8 a:link{
+        color: black;
+    }
+</style>
+<body>
+    <div style="position: relative;" class="container-fluid p-0 m-0">
+		<div class="fixed-top bg-white "> 
+			<div class="container-fluid ">
+				<div class="row row-cols-3 pt-2 pb-2  justify-content-center">
+					<div class="col d-flex d-lg-none  start m-0 p-0">
+						<button style="min-width: 100px;"  class=" rounded-pill btn btn-offcanvas-changed btn border-primary"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas ">
+							Menu
+						</button>
+					</div>
+					<div class="col d-flex  d-lg-none  align-items-center" style="width: 45px; height: 45px; background-size: cover; background-image:url(assets/images/pp_fc_hl.svg) ;" >
+					</div>
+					<div class="col p-0 m-0  d-flex justify-content-end d-lg-none">
+						<a  href="./login.html" type="button" class=" btn border-primary rounded-pill" style="text-decoration: none; min-width: 100px;">Log in</a>
+					</div>		
+				</div>
+			</div>
+			<div style="position: absolute;top: 0 ;left: 0;"  class="p-2 container-fluid  d-none d-lg-block m-0 text-end float-start pt-2 bg-white">
+				<div class="row">
+					<div class="col ">
+						<img  class="pb-4 img-fluid p-2" src="assets/images/pp_fc_hl.svg" alt="logo">	
+					</div>
+					<div class="col-6 d-flex justify-content-center align-items-md-end">
+						<nav class="nav ">
+							<a class="pb-5 pt-3 nav-link nav-list-link dropdown-toggle text-dark fs-6 " href="#" role="button" data-bs-toggle="dropdown" style="font-size: 18px;"> PERSONAL</a>
+							<div class="dropdown-menu  rounded-0 vw-100 bg-primary">
+								<div class="row container-dropdown">
+									<div class="col-lg-3" >
+										<ul class="list-unstyled">
+											<li class="m-5"><a class="text-white" href="#"><h5>Pay with Paypal</h5>Use Paypal to shop & send payments</a></li>
+											<li class="m-5"><a class="text-white" href="#"><h5>Shop online Securely</h5>Fast & safe online shopping</a></li>
+										</ul>
+									</div>
+									<div class="col">
+										<ul class="list-unstyled">
+											<li class="m-5"><a class="text-white" href="#"><h5>Send Payments</h5>Send money for work done</a></li>
+											<li class="m-5"><a class="text-white" href="#"><h5>Buyer Protection</h5>Protect your purchases</a></li>
+										</ul>
+									</div>
+									<div class="col-1">
+										<button class="btn btn-close btn-white"> </button>
+									</div>
+								</div>
+							</div>
+							<a class="pb-3 pt-3 nav-link nav-list-link dropdown-toggle text-dark fs-6  " href="#" role="button" data-bs-toggle="dropdown" style="font-size: 18px;"> BUSINESS</a>
+							<div class="dropdown-menu  rounded-0 vw-100 bg-primary text-white">
+								<div class="row container-dropdown justify-contain-start">
+									<div class="col-lg-4">
+										<h5><narrow>SMALL-TO-MEDIUM BUSINESS</narrow></h5>
+										<div class="row">
+											<div></div>
+											<div></div>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<h5><narrow>ENTERPRISE</narrow></h5>
+										<div class="row">
+											<div></div>
+											<div></div>
+										</div>
+									</div>
+									<div class="col-lg-3">
+										<h5><narrow>MORE</narrow></h5>
+										<div class="row">
+											<div></div>
+											<div></div>
+										</div>
+									</div>
+									<div class="col">
+										<button class="btn btn-close btn-white"></button>
+									</div>
+								</div>
+							</div>
+								<a class="pb-3 pt-3 nav-link nav-list-link dropdown-toggle text-dark fs-6 " href="#" role="button" data-bs-toggle="dropdown" style="font-size: 18px;"> PARTNERS</a>
+								<a class="pb-3 pt-3 nav-link nav-list-link dropdown-toggle text-dark fs-6 " href="#" role="button" data-bs-toggle="dropdown" style="font-size: 18px;"> HELP & FAQ</a>
+								<div class="dropdown-menu  rounded-0 vw-100 bg-primary">
+									<div class="row container-dropdown justify-contain-start">
+										<div class="col-lg-4">
+											<h4>SMALL-TO-MEDIUM BUSINESS</h4>
+											<div class="row">
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+										<div class="col-lg-4">
+											<h4>ENTERPRISE</h4>
+											<div class="row">
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+										<div class="col-lg-3">
+											<h4>MORE</h4>
+											<div class="row">
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+										<div class="col">
+											<button class="btn btn-close btn-white"></button>
+										</div>
+									</div>
+								</div>
+                            </div>
+						</nav>
+                        <div class="col d-flex p-3 text-start d-none d-lg-block ">
+                            <a  href="./login.html" type="button" class="me-2 btn border-primary rounded-pill p-2" style="text-decoration: none;min-width: 100px; z-index: 2;">Log in</a>
+                            <a href="./Sign up.html" type="button" class="btn btn-primary rounded-pill p-2 " style="min-width: 100px;">sign up</a>
+                        </div>		
+				</div>
+			</div>
+		</div>
+        <section class="section1 pt-5 mt-5">
+            <div class="container-fluid bg-primary text-white" >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 d-flex flex-column flex-wrap justify-content-center  col-12 ">
+                            <div class="">
+                                <p class="fs-5 fw-bold">For Enterprise</p>
+                                <h1 class="fs-1">Capture the full potential of commerce2</h1>
+                                <p class="fs-4">PayPal helps businesses find active buyers, increase conversion across channels, and scale into new markets.</p>
+                                <a  class="text-primary fw-bold p-3 btn rounded-pill btn-light" href="" class="btn btn-white">Contact Sales</a>    
+                            </div>
+                        </div>
+                        <div style=" transform: translateY(22.2%);" class="col-md-6 col-12">
+                            <div class="d-flex flex-wrap">
+                                <img class="img-fluid" src="assets/images/enterprise/07_ENT_Intro_compressed.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>              
+            </div>
+        </section>
+        <div class="bg-primary container-fluid" style="padding-top: 72px; padding-bottom: 72px;">
+            <div class="container text-white text-start  p-4">
+                <p class="fs-5 fw-bold m-2">Looking for an out-of-the-box commerce solution?</p>
+                <a class="fs-5 fw-bold m-2 p-0  text-white btn btn-white" href="">See PayPal for Small-to-Medium Businesses  >>> </a>    
+            </div>
+        </div>  
+        <section class="secsion2 bg-dark">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="ps-5 pe-5" style=" transform: translateY(10.2%);">
+                                <img class="img-fluid" src="assets/images/enterprise/07_ENT_Intro_editorial_2.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 text-white">
+                            <div>
+                                <h1>Leverage payments innovation as a catalyst for growth</h1>
+                                <p>Stay agile, ahead of trends, and help safeguard against economic uncertainty with modular solutions that are easy to operationalize.</p>
+                                <a href="">Learn about our enterprise platform</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <div >
+            <span style="height: calc(2rem + 2rem)" class=" d-block w-100 bg-white" ></span>
+        </div>
+        <section class="section3">
+            <div class="container-fluid">
+                <div class="container pt-5 pb-5 ps-3 ps-3">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div>
+                                <h1 class=" pb-4">Maximize revenue with proprietary intelligence</h1>
+                                <p class="fs-5 fw-bold pb-4">We help you understand customer behaviors, detect fraud, and capture more revenue across channels, devices, and markets.</p>
+                                <a class="fs-5 fw-bold" href="">Learn about our enterprise platform >></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div style="transform: translateX(-22.2%);" >
+                                <img class="img-fluid" src="assets/images/enterprise/09_ENT_Intro_editorial_3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="background-color: #0a4437;" class="section4 ">
+            <div class="container-fluid">
+                <div class="container text-white">
+                    <div class="row ">
+                        <div class="col-6">
+                            <div>
+                                <img class="img-fluid" src="assets/images/enterprise/globe.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-5 d-flex flex-column justify-content-center">
+                            <div class="container">
+                                <div class="ps-4 pe-2">
+                                    <h1 class="mb-4">Connect into a robust and reliable network</h1>
+                                    <p class="fs-5 fw-bold mb-4">PayPal is a single point of entry to unmatched payments expertise, tools, technology, and data that can help you compete and win in any market.</p>
+                                    <a class="fs-5 fw-bold" href="">Learn about our enterprise platform</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                   
+                    </div>
+                </div>   
+            </div>
+        </section>
+        <section style="background-color: #f5f5f5;" class="section5 ">
+            <div class="container pt-5 pb-5">
+                <div class="row justify-content-evenly">
+                    <div class="col-md-5 col-12 pe-4">
+                        <h1>
+                            <h1 class="display-5">
+                                PayPal is trusted by businesses and consumers around the world
+                            </h1>
+                        </h1>
+                    </div>
+                    <div class="col-md-5 col-12">
+                        <div >
+                            <div  class=" row border-bottom pb-5">
+                                <div class="col">
+                                    <h1 style="color:green" >400+</h1>
+                                    <p class="fs-5">million active customers</p>
+                                </div>
+                                <div class="col">
+                                    <h1 style="color:green" >200+</h1>
+                                    <p class="fs-5">markets around the globe</p>
+                                </div>
+                            </div>
+                            <div class="row pt-5">
+                                <div class="col">
+                                    <h1 style="color:green" >20+</h1>
+                                    <p class="fs-5">years of experience</p>
+                                </div>
+                                <div class="col">
+                                    <h1 style="color:green" >30+</h1>
+                                    <p class="fs-5">million merchants</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </section>
+        <section style="background-color: #f5f5f5;" class="section6" >
+            <div class="container">
+                <div class="row justify-content-evenly">
+                    <div class="col pe-2">
+                        <div class="p-3 bg-white">
+                            <div style="min-height: 30rem;" class="p-3">
+                                <img class="img-fluid" src="assets/images/enterprise/closingCTA-contact.jpg" alt="">
+                                <p class="fs-2 fw-bold">Contact our business team​</p>
+                                <p class="fs-5">Learn how payments can be leveraged as a catalyst for growth.</p>    
+                            </div>
+                            <a style="min-width:10rem; " class="fw-bold btn p-3 rounded-pill btn-primary" href="">Contact Sales</a>
+
+                        </div>
+                    </div>
+                    <div class="col pe-2">
+                        <div class="p-3 bg-white">
+                            <div style="min-height: 30rem;" class="p-3">
+                                <img class="img-fluid" src="assets/images/enterprise/closingCTA-help.jpg" alt="">
+                                <p class="fs-2 fw-bold">Explore developer documentation​</p>
+                                <p class="fs-5">See how our flexible and interoperable technology helps to simplify integration.</p>    
+                            </div>
+                            <a   class="fw-bold btn p-3 rounded-pill btn-primary" href="">Visit Developer Docs </a>
+
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+        <div class="container mt-5 mb-5">
+            <div>
+                <p>1 PayPal quarterly earnings report, May 5, 2021.</p>
+            </div>
+        </div>
+        <section class="section8">
+            <div class="container p-5">
+                <div class="row justify-content-center">
+                    <div class="col-5 d-flex flex-column" >
+                        <h4 class="pb-4 border-bottom text-primary">Small-to-Medium Business</h4>
+                        <div class="row mt-4">
+                            <p class="col d-flex flex-column">
+                                <a class="pb-4" href="">Introduction</a>
+                                <a class="pb-3" href="">How PayPal Works</a>
+                                <a class="pb-3" href="">Getting Started</a>
+                            </p>
+                            <p class="col d-flex flex-column">
+                                <a class="pb-4" href="">Solutions</a>
+                                <a class="pb-3" href="">Solutions</a>
+                                <a class="pb-3" href="">Make Payments</a>
+                                <a class="pb-3" href="">Manage Risk</a>
+                                <a class="pb-3" href="">Manage Risk</a>
+                            </p>
+
+                        </div>
+
+                        
+                    </div>
+                    <div class="col-5">
+                        <h4 class="pb-4 border-bottom text-primary">Enterprise</h4>
+                        <div class="row mt-4">
+                            <p class="col d-flex flex-column">
+                                <a href="">Introduction</a>
+                            </p>
+                            <p class="col d-flex flex-column">
+                                <a class="pb-4" href="">Platform & Solutions</a>
+                                <a class="pb-3" href="">Accept Payments</a>
+                                <a class="pb-3" href="">Make Payments</a>
+                                <a class="pb-3" href="">Manage Risk</a>
+                                <a class="pb-3" href="">Streamline Operations</a>
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="col d-flex flex-column">
+                        <h4 class="pb-4 border-bottom text-primary">More</h4>
+                        <a class="pb-4" href="">Pricing</a>
+                        <a class="pb-3"href="">Pricing</a>
+                        <a class="pb-3"href="">Dropshippers</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer d-flex align-items-center bg-white pt-5 pb-5">
+            <div class="container-fluid ms-4">
+                <div class="row">
+                    <div>
+                        <ul class="float-lg-end list-unstyled">
+                            <li class="text-lg-end text-center">
+                                <a class="text-decoration-none text-dark pe-1 border-secondary border-1 border-end"  href="">Vietnamese</a>
+                                <a href=""><img src="assets/images/flag.vn.png" alt="flag-vn"></a>
+                            </li>
+                        </ul>
+                        <ul class="float-lg-start text-center text-lg-start float-center list-unstyled text-decoration-none fw-bold">
+                            <li class="pe-3 d-inline-block"><a href="">Help</a> </li>
+                            <li class="pe-3 d-inline-block"><a clas href="">Contact</a></li>
+                            <li class="pe-3 d-inline-block"><a href="">Fees</a></li>
+                            <li class="pe-3 d-inline-block"><a href="">Security</a></li>
+                            <li class="pe-3 d-inline-block"><a href="">Apps</a></li>
+                            <li class="pe-3 d-inline-block"><a href="">Shop</a></li>
+                            <li class="pe-3 d-inline-block"><a href="">Feedback</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 d-sm-none d-lg-block">
+                        <hr>
+                    </div>
+    
+                </div>
+                <div class="row">
+                    <div>
+                        <ul class="text-center float-lg-start float-md-none  fw-bold text-muted list-unstyled ">
+                            <li class="pe-2 d-inline-block">About</li>
+                            <li class="pe-2 d-inline-block">Newsroom</li>
+                            <li class="pe-2 d-inline-block">jobs</li>
+                            <li class="pe-2 d-inline-block">Developers</li>
+                            <li class="pe-2 d-inline-block">Partner</li>
+                        </ul>
+                        <ul class="text-center float-lg-end float-md-none fw-bold text-muted list-unstyled">
+                            <li class="pe-2 d-inline-block">&copy; 1999-2023</li>
+                            <li class="pe-2 d-inline-block">Accessibility</li>
+                            <li class="pe-2 d-inline-block">Privacy</li>
+                            <li class="pe-2 d-inline-block">Legal</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>PayPal Pte. Ltd. (“3PL”) has applied for a license under the Singapore Payment Services Act (“PS Act”) with the Monetary Authority of Singapore. During this statutory transitional period, 3PL is operating under an exemption from holding a license and is allowed to continue to provide specific payment services.
+                        <br><br>
+                        When you visit or interact with our sites, services, applications, tools or messaging, we or our authorised service providers may use cookies, web beacons, and other similar technologies for storing information to help provide you with a better, faster and safer experience and for advertising purposes. Learn more <a href="">here</a> .</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

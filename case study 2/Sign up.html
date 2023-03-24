@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up </title>
+
+    <link rel="stylesheet" href="assets/bootstrap-5.0.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="assets/bootstrap-5.0.2/js/bootstrap.bundle.js"></script>
+
+<style>
+    #radio1{
+        border: none !important;
+    }
+    #radio2{
+        border: none !important;
+    }
+    .form-check-input:checked [type]{
+        background-color:red !important;
+    }
+    
+    .radio1:checked[type=radio]
+    {
+        background-color: red !important;
+        background-image: none;
+        
+    }
+    .radio2:checked[type=radio]
+    {
+        background-color: blue !important;
+        background-image: none;
+        
+    }
+    footer a{
+        color: white;
+    }
+    @media (max-width: 767px)
+        {
+            .container-fluid{
+                background-image: none !important;
+                background-color: white;
+            }
+            .login-wraper{
+                width: 100% !important;
+                margin-top: 0 auto !important;
+                padding:30px !important;
+                
+            }
+            .signup-wraper{
+                border: none !important;
+                padding: 0 !important;
+            }
+            .header a{
+                max-width: 100%;
+            }
+            footer a,p{
+                color: black;
+                text-decoration: none;
+            }
+            footer a:hover{
+                text-decoration: underline;
+            }
+            footer a:active{
+                color: black;
+            }
+        
+            .containter-footer-small{
+                margin: 0 !important;
+                padding: 0 !important ;
+            }
+            
+        }
+</style>
+
+</head>
+<body>
+    <div style="background-size: cover; background-repeat: no-repeat; background-image: url(assets/images/signup/Smart-Intent-Capture_VN_VI_EN.jpg);" class="container-fluid m-0 p-0 ">
+        <div style="position: relative;" class=" container-fluid  bg-white "> 	
+				<div class="row row-cols-3  row-cols-xl-1 p-2 justify-content-between">
+					<div class="col  d-flex d-xl-none align-items-center">
+					</div>
+					<div class="col d-flex d-xl-none  align-items-center" style="width: 45px; height: 45px; background-size: cover; background-image:url(assets/images/pp_fc_hl.svg) ;" >
+					</div>
+					<div class="col  d-flex align-items-center justify-content-end pt-xl-3 mt-xl-1">
+						<a  href="./login.html" type="button" class="me-2 btn border-primary rounded-pill p-2" style="width: 100px; z-index: 2;">Log in</a>
+						<a type="button" class="btn btn-primary d-none d-xl-inline rounded-pill p-2" style="width: 100px; z-index: 2">sign up</a>
+					</div>		
+				</div>
+                <div style="position: absolute;top: 5px; left: 0;"  class="container-fluid  d-none d-lg-block m-0 text-end float-start pt-2 bg-white">
+                    <div class="row  pt-4">
+                        <div class="col-2 ">
+                            <img class="img-fluid pb-2" src="assets/images/pp_fc_hl.svg" alt="logo">	
+                        </div>
+                        <div class="col-7 d-flex justify-content-center align-items-md-end">
+                            
+                        </div>
+                    </div>
+                </div>
+		</div>
+        <div style="position: relative; width: 540px;" class="login-wraper pt-5 container-md pb-4">
+            <div   class="signup-wraper bg-white  mt-3 p-5 border rounded-3 ">
+                <div >
+                   <h1 class="text-center display-6 fs-3">Sign up for PayPal today for free.</h1>
+                   <p class="text-muted text-center small">Get started by choosing an account type:</p>
+                   <div>
+                        <div>
+                            <form action="#">
+                                <div  class="radio1-wraper">
+                                    <div style="position: relative;"  class="form-check ">
+                                        <span style= "border-radius: 100%; position: absolute; top: 9.5px; left: 0; float:left; border: 1px solid red; width: 25px;height: 25px;" class="">
+                                            <input type="radio" class=" radio1 ms-1 form-check-input" id="radio1" name="optradio" value="option1">
+
+                                        </span>
+                                        <label class="fw-bold fs-3 ps-2 form-check-label" for="radio1">Personal Account</label>      
+                                    </div>
+                                    <div>
+                                        <ul class="ps-5">
+                                            <li class="small">Shop online from millions of global sellers. </li>
+                                            <li class="small">Send and receive payments globally.</li>                                              
+                                            <li class="small">Shop with confidence with Buyer Protection policy.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div  class="radio2-wraper">
+                                    <div style="position: relative;" class="form-check ">
+                                        <span style= "border-radius: 100%; position: absolute; top: 9.5px; left: 0; float:left; border: 1px solid blue; width: 25px;height: 25px;" class="">
+                                            <input type="radio" class="radio2 ms-1 form-check-input" id="radio2" name="optradio" value="option1">
+
+                                        </span>
+                                        <label class="text-primary fw-bold fs-3 ps-2 form-check-label" for="radio2">Business Account</label>      
+                                    </div>
+                                    <div>
+                                        <ul class="ps-5" >
+                                            <li class="small">Send and receive payments under a business name. </li>
+                                            <li class="small">24/7 online fraud monitoring and Seller Protection policy.</li>                                             
+                                            <li class="small">No setup, monthly or hidden fees.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button style="min-width: 124px;" type="submit" class="ps-4 pe-4 btn btn-primary rounded-pill mt-3">Next</button>
+                                </div>
+                              </form>
+                        </div>      
+                   </div>
+                </div>
+            </div>  
+        </div>
+        <footer class="text-white bg-transparent footer d-flex align-items-center pt-5 pb-5">
+            <div class="containter-footer-small container-fluid ms-4">
+                <div class="row">
+                    <div>
+                        <ul class="float-lg-end list-unstyled">
+                            <li class="text-lg-end text-center">
+                                <a class="text-decoration-none pe-1 border-secondary border-1 border-end"  href="">Vietnamese</a>
+                                <a href=""><img src="assets/images/flag.vn.png" alt="flag-vn"></a>
+                            </li>
+                        </ul>
+                        <ul class="float-lg-start text-center text-lg-start float-center list-unstyled text-decoration-none fw-bold">
+                            <li class="pe-3 d-inline-block"><a href="">Help</a> </li>
+                            <li class="pe-3 d-inline-block"><a clas href="">Contact</a></li>
+                            <li class="pe-3 d-inline-block"><a href="">Fees</a></li>
+                            <li class="pe-3 d-inline-block"><a href="">Security</a></li>
+                            <li class="pe-3 d-inline-block"><a href="">Apps</a></li>
+                            <li class="pe-3 d-inline-block"><a href="">Shop</a></li>
+                            <li class="pe-3 d-inline-block"><a href="">Feedback</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 d-sm-none d-lg-block">
+                        <hr>
+                    </div>
+    
+                </div>
+                <div class="row">
+                    <div>
+                        <ul class="text-center float-lg-start float-md-none  fw-bold text-muted list-unstyled ">
+                            <li class="pe-2 d-inline-block"><a href="">About</a> </li>
+                            <li class="pe-2 d-inline-block"><a href="">Newsroom</a> </li>
+                            <li class="pe-2 d-inline-block"><a href="">jobs</a> </li>
+                            <li class="pe-2 d-inline-block"><a href="">Developers</a> </li>
+                            <li class="pe-2 d-inline-block"><a href="">Partner</a> </li>
+                        </ul>
+                        <ul class="text-center float-lg-end float-md-none fw-bold text-muted list-unstyled">
+                            <li class="pe-2 d-inline-block"><a href="">&copy; 1999-2023</a></li>
+                            <li class="pe-2 d-inline-block"><a href="">Accessibility</a> </li>
+                            <li class="pe-2 d-inline-block"><a href="">Privacy</a> </li>
+                            <li class="pe-2 d-inline-block"><a href="">Legal</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>PayPal Pte. Ltd. (“3PL”) has applied for a license under the Singapore Payment Services Act (“PS Act”) with the Monetary Authority of Singapore. During this statutory transitional period, 3PL is operating under an exemption from holding a license and is allowed to continue to provide specific payment services.
+                        <br><br>
+                        When you visit or interact with our sites, services, applications, tools or messaging, we or our authorised service providers may use cookies, web beacons, and other similar technologies for storing information to help provide you with a better, faster and safer experience and for advertising purposes. Learn more <a href="">here</a> .</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

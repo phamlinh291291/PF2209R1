@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Poppins';
+        }
+        .container{
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.5),#009688);
+            background-repeat: no-repeat;
+            
+
+        }
+        /* .grid-header{
+            width: 100%;
+            display: inline-block;
+
+        } */
+        .menu a{
+            text-decoration: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding-right: 3%;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        
+        .whitecolor{
+            color: white;
+        }
+        .logo{
+            position: absolute;
+            margin: 4% 0 0 10%;
+            width:200px;
+            font-size: 40px;
+            font-weight: bold;
+            
+        }
+        .home-content-bigtext{
+            text-align: center;
+            padding-top: 190px;
+            font-size: 130px;
+        }
+        .home-content-smalltext{
+            text-align: center;
+            font-style: italic;
+            font-size: 20px;
+        }
+        .grid-home-content-btns{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-column-gap: 30px;
+            margin-top:30px ;
+            justify-content:center;
+        }
+        .grid-home-content-btns a span{
+           width: 0%;
+           height: 100%;
+           position: absolute;
+           top: 0;
+           left: 0;
+           background:white;
+           transition: width 0.5s;
+           z-index: -1;
+
+
+        }
+            
+        .grid-home-content-btns a{
+            position: relative;
+            display: inline-block;
+            border: .5px solid #fff;
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1;
+            font-size: 18px;
+            width: 150px;       
+            text-decoration: none;
+            transition: color 0.5s;
+        }
+        .grid-home-content-btns a:hover span{
+            width:100%;        
+        }
+        .grid-home-content-btns a:hover{
+            color: black;
+
+        }
+        .sideNav{
+            background-color: #009688;
+
+            right: -20%;
+            width: 20%;
+            position: fixed;
+            height: 100vh;
+            z-index: 2;
+            display: block;
+            transition: right 1s;
+        }
+        .sideNav ul{
+            list-style-type: none;
+            /* display: flex;
+            flex-direction: column;
+            flex-wrap: wrap; */
+            
+            
+        }
+        .sideNav a{
+            text-decoration: none;
+            line-height: 75px;
+            padding: 10px;
+        }
+        .menu:active + .sideNav {
+            right:0%;
+        }
+        .grid-feature-content{
+            display: grid;
+            grid-template-columns:40% 30%;
+            grid-template-rows:70vh auto;
+            margin-left: 10%;
+            grid-column-gap: 7% ;
+            
+        }
+        .grid-feature-items_text{
+            grid-row: 1/ span 2;
+        }
+       
+        .greencolor{
+            color:#009688;
+        }
+        .grid-feature-items_text ul li{
+            line-height:25px;
+            font-size: 20px;
+             margin-bottom: 5px;
+             list-style-type: none;
+        }
+        .grid-feature-items_text ul li:nth-child(2){
+            font-size: 13px;
+        }
+        .grid-feature-items_text ul li{
+            display:flex;
+        }
+        .grid-feature-items_text ul{
+            margin-bottom: 20px;
+        }
+        
+        .grid-feature-items_text img{
+
+            width: 20px;
+            padding-right: 20px;
+        }
+        .feature-bigtext{
+            padding-top: 1%;
+            padding-bottom: 5%;
+            text-align: center;
+            font-size: 40px;
+        }
+        .feature-text{
+            text-align:center ;
+        }
+        .feature-text p{
+            font-size: 20px;
+            margin-top:0;
+            position: relative;
+            display: inline-block;
+        }
+        #feature{
+            margin-top: 3%;
+        }
+        .feature-text p::after{
+            content: '';
+            width: 50px;
+            height: 35px;
+            background: linear-gradient(#019578,#fff);
+            position: absolute;
+            top: -20px;
+            left: 0;
+            z-index: -1;
+            transform: rotate(10deg);
+            border-top-left-radius: 35px;
+            border-bottom-right-radius: 35px;
+        }
+        .grid-feature-items_img{
+            background: linear-gradient(rgba(0,0,0,0.5),#009688),url("images/features.jpg");
+            background-size: cover;
+            border-radius: 10px;
+           
+        }
+        .features-container{
+            width: 100%;
+        }
+
+        .services-container{
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto;
+            text-align: center;
+            background-color: lightgrey;
+            margin-top: 70px;
+            display: grid;
+        }
+       
+        .services-img{
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: auto;
+        }
+        .grid-services-img{
+            position: relative;
+            flex-basis: 40%;
+            max-width: 50%;
+            text-align: center;
+            border-radius: 7px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .grid-services-img img{
+            width: 100%;
+            border-radius: 7px;
+        }
+        .services-overlay{
+            background-size: cover;
+            position: absolute;
+            top:0;
+            border-radius: 7px;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: 1s;
+            background: linear-gradient(rgba(0,0,0,0.5),#009688);
+
+        }
+        .services-describer{
+            width: 80%;
+            left: 50%;
+            position: absolute;
+            bottom: 5px;
+            opacity: 0;
+            transform:translateX(-50%);
+            transition: 1s;
+
+        }
+        .grid-services-img:hover .services-overlay{
+            opacity: 1;
+
+        }
+        .services-smalltext{
+            color: #009688;
+            padding: 30px 0;
+        }
+        .services-bigtext{
+            padding-bottom: 30px;
+            font-size: 40px;
+        }
+        .grid-services-img:hover .services-describer{
+            opacity: 1;
+            bottom: 40%;
+        }
+       
+        .smalltext p{
+            font-size: 20px;
+            margin-top:0;
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+        }
+        .smalltext p::after{
+            content: '';
+            width: 50px;
+            height: 35px;
+            background: linear-gradient(#019578,lightgrey);
+            position: absolute;
+            top: -20px;
+            left: 0;
+            
+            transform: rotate(10deg);
+            border-top-left-radius: 35px;
+            border-bottom-right-radius: 35px;
+        }
+  
+        /* Responsive layout - makes a two column-layout instead of four columns */
+            @media (max-width: 1300px) {
+                .column {
+                    flex: 50%;
+                    max-width: 50%;
+                }
+                .grid-services-img{
+                    flex-basis: 80%;
+                    max-width: 80%
+                }
+
+            }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+            @media (max-width: 617px) {
+                .column {
+                    flex: 100%;
+                    max-width: 100%;
+                }
+                .grid-services-img{
+                    flex-basis: 100%;
+                    max-width: 100%
+                }
+                .features-container{
+                    font-size: smaller;
+                }
+            }
+            @media (max-width: 500px)
+            {
+                .features-container{
+                    font-size: smaller;
+                }
+                .grid-services-img{
+                    flex-basis: 100%;
+                    max-width: 100%
+                }
+            }
+    </style>
+
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="grid-items logo whitecolor">BARBER</div>
+            <div class="grid-items menu whitecolor" id="Menu" ><a href="#">Menu</a></div>
+            <div class="sideNav">
+                <ul>
+                    <li><a class="whitecolor" href="#">Home</a></li>
+                    <li><a class="whitecolor" href="#">Feature</a></li>
+                    <li><a class="whitecolor" href="#">Services</a></li>
+                    <li><a class="whitecolor" href="#">Testimonial</a></li>
+                    <li><a class="whitecolor" href="#">Meet Us</a></li>
+                </ul>
+        </div>
+        <div class="home-content-bigtext whitecolor">Hair Studio</div>
+        <div class="home-content-smalltext whitecolor">
+            Style Your Hair is Style Your Life
+        </div>
+        <div class="grid-home-content-btns">
+            <a class="grid-home-items whitecolor" href="#"><span></span>Find Out</a>
+            <a class="grid-home-items whitecolor" href="#"><span></span>Read More</a>            
+        </div>
+    </section>
+    
+        <section id="feature">
+            <div class="features-container">
+                <div class="feature-text greencolor"><p>FEATURES</p></div>
+                <div class="feature-bigtext">Why Choose Us</div>
+                <div class="grid-feature-content">
+                        <div class="grid-feature-items_text">
+                            <ul>
+                                <li class="greencolor">Experienced Staff
+                                    <li><img src="images/shield-halved-solid.svg" alt="sheld">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</li>
+                                </li>
+
+                            </ul>
+                            <ul>
+                                <li class="greencolor">Pre Booking Online
+                                    <li><img src="images/square-check-regular.svg" alt="checked"> Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</li>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="greencolor">Affordable Cost
+                                    <li><img src="images/euro-sign-solid.svg" alt="cost"> Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</li>
+                                </li>
+                            </ul>
+                                
+                            
+                        </div>
+                        <div class="grid-feature-items_img" >
+                            <!-- <img src="images/features.jpg" alt="feature-img"> -->
+                        </div>
+                </div>
+            </div>
+            
+        </section>
+        <section id="services">
+            <div class="services-container">
+                <div class="services-items feature-text services-smalltext smalltext"><p>SERVICES</p></div>
+                <div class="services-items services-bigtext bigtext"><p>We Provider Better</p></div>
+                <div class="services-items services-img">
+                        <div class="grid-services-img">
+                            <img src="images/services1.jpg" alt="services-image-items-1" >
+                            <div class="services-overlay"> </div>
+                            <div class="services-describer">
+                                <h3>Beard Trim</h3>
+                                <hr>
+                                <p>Ipsum dolor sit amet, consectetur adipiscing elit,
+                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam</p>
+
+                            </div>
+                            
+                        </div>
+                        <div class="grid-services-img">
+                            <div class="services-overlay"> </div>
+                            <img src="images/services2.jpg" alt="services-image-items-2">
+                            <div class="services-describer">
+                                <h3>Beard Trim</h3>
+                                <hr>
+                                <p>Ipsum dolor sit amet, consectetur adipiscing elit,
+                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam</p>
+
+                            </div>
+                            
+                        </div>
+                        <div class="grid-services-img">
+                            <div class="services-overlay"> </div>
+                            <img src="images/services3.jpg" alt="services-image-items-3">
+                            <div class="services-describer">
+                                <h3>Beard Trim</h3>
+                                <hr>
+                                <p>Ipsum dolor sit amet, consectetur adipiscing elit,
+                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam</p>
+
+                            </div>
+                            
+                        </div>
+                        <div class="grid-services-img">
+                            <div class="services-overlay"> </div>
+                            <img src="images/services4.jpg" alt="services-image-items-4">
+                            <div class="services-describer">
+                                <h3>Beard Trim</h3>
+                                <hr>
+                                <p>Ipsum dolor sit amet, consectetur adipiscing elit,
+                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam</p>
+
+                            </div>
+                            
+                        </div>
+                </div>
+            </div>
+        </section>
+    
+        <!---sidenav-->
+        
+</body>
+</html>
